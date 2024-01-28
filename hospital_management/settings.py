@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)5@p$q^2(k+wl$e&d#bk$uz#i2vxsjr-*%&gjegeo=0brxk+qg
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -79,9 +79,9 @@ WSGI_APPLICATION = 'hospital_management.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'princeton_hospital',
-        'HOST':'localhost',
-        'PASSWORD':'9696',
+        'NAME': 'hospitalms',
+        'HOST':'hospitalms.cdso6g6owjtn.eu-north-1.rds.amazonaws.com',
+        'PASSWORD':'96969696',
         'USER':'root',
         'PORT':'3306',
 
