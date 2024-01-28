@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/hospital.css' %}" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appointments</title>
+</head>
+<body class="center" bgcolor="lightpink">
+    <h2>Booked for doctor appointments</h2>
+    {% if appointments %}
+    <table class="center">
+        <thead>
+            <th>patientname &nbsp;</th>
+            <th>age &nbsp;</th>
+            <th>date &nbsp;</th>
+            <th>department &nbsp;</th>
+        </thead>
+        {% for appointment in appointments %}
+        <tr>
+            <td>{{appointment.patientname}}</td>
+            <td>{{appointment.age}}&nbsp;</td>
+            <td>{{appointment.date}} &nbsp;</td>
+            <td>{{appointment.departments}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>no records found</p>
+    {% endif %}
+</body>
+</html>

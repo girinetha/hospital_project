@@ -1,0 +1,27 @@
+{% load static %}
+{% include 'header.html'%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h2>Booking for an appointment</h2>
+    {% if appointment %}
+    <table>
+        <thead>
+            <th>patientname</th>
+            <th>age</th>
+            <th>date</th>
+            <th>departments</th>
+        </thead>
+        {% for field in appointment %}
+        <tr>
+            <td>{{field.patientname}}</td>
+            <td>{{field.age}}</td>
+            <td>{{field.date}}</td>
+            <td>{{field.departments}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>no records found</p>
+    {% endif %}
+{% include 'footer.html' %}

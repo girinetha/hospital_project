@@ -1,0 +1,68 @@
+{% load static %}
+{% include 'header.html' %}
+<!-- <head> -->
+    <!-- <link rel="stylesheet" href="{% static 'css/hospital.css' %}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}"> -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- </head> -->
+<!-- <body bgcolor="lightgrey"> -->
+    <!-- <div class="center">
+        <h1>PRINCETON HOSPITAL</h1>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <a href="">Home</a>
+            <a class="nav-item" href="">Management</a>
+            <a href="{% url 'specialities' %}">Specialities</a>
+            <a href="{% url 'addpatient' %}" class="right">Book an appointment</a>
+            <a href="{% url 'myadmin' %}" class="right-side">mydmin</a>
+        </ul>
+    </nav> -->
+
+    <h2>Wellcome to the multi speciality hospital</h2>
+    <img height="500" width="1350" src="{% static 'images/hospital_image.webp' %}" alt="">
+    <!-- <form method="post">
+        {{myform.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="submit">
+    </form> -->
+    <br><br>
+    
+    <div class="box">
+        <a style="padding: 30px;" href="{% url 'donation' %}"><h1 style="color: black;">Blood compaign</h1></a>
+    </div>
+    <br>
+    <h2 style="display: ruby-text-container;">CENTER OF EXCELLENCE</h2>
+    <br><br>
+    <nav>
+        <div class="nav-box1">
+          <img src="{% static 'images/heart_images.jpg' %}" alt="Image1">
+          <a href="https://www.ncbi.nlm.nih.gov/books/NBK557571/"><h2>Heart Transplant</h2></a>
+        </div>
+        <div class="nav-box1">
+          <img src="{% static 'images/laser_image.png' %}" alt="Image 2">
+          <a href="https://www.healthline.com/health/laser-therapy"><h2>Laser Treatment</h2></a>
+        </div>
+        <div class="nav-box1">
+            <img src="{% static 'images/liver_image.jpg' %}" alt="Image2">
+            <a href="#"><h2>Liver Transplant</h2></a>
+        </div>
+        <br><br><br>
+        <div class="nav-box1">
+            <img src="{% static 'images/bone_image.jpg' %}">
+            <a href="#"><h2>Bone Joints</h2></a>
+        </div>
+        <div class="nav-box1">
+            <img src="{% static 'images/mother_child.jpg' %}">
+            <a href="#"><h2>Mother & Child</h2></a>
+        </div>
+        <div class="nav-box1">
+            <img src="{% static 'images/robot_image.png' %}" alt="Image3">
+            <a href="#"><h2>Robotic Science</h2></a>
+        </div>
+    </nav>
+      <br><br>
+    <h2>gallery images</h2>
+{% include 'footer.html' %}

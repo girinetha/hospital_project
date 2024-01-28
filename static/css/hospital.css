@@ -1,0 +1,120 @@
+
+h1{
+    text-align: center;
+}
+h2{
+    text-decoration: dotted;
+    text-align:center;
+}
+.navbar{
+    background-color:lightslategrey;
+    padding: 3px;
+    font-size: 20px;
+}
+.navbar a{
+    padding: 10px 30px;
+}
+
+.navbar1 li{
+    padding: 10px 30px;
+}
+
+.navbar.ul{
+    list-style: none;
+    padding: 10px;
+    background-color: pink;
+    text-size-adjust: 20px20px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Adjust depending on navbar height */
+    left: 0;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+  
+.navbar.ul.nav-item:hover .dropdown {
+    display: block; /* Show dropdown on hover */
+}
+  
+.dropdown li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+}
+.box{
+    text-align:right;
+    width: 950px;
+    height: 80px;
+    border: 1px;
+    padding: 200px;
+    background-size: cover;
+    background-image: url('https://cdn.expresshealthcare.in/wp-content/uploads/2020/06/15151518/GettyImages-1216694149-e1592214251281.jpg');
+}
+.right-side{
+    float: right;
+}
+.center{
+    text-align: center;
+}
+
+/* .navbar1{
+    background-color:lightslategrey;
+    padding: 3px;
+    font-size: 20px;
+} */
+/* .bordered-box{
+    border: 2px solid rgb(118, 124, 131);
+    width: 300px;
+    height: 200px;
+    box-shadow: 0px 2px 0px black;
+    padding-top: 10px;
+    image-rendering: url('https://www.shutterstock.com/image-vector/hospital-landscape-vector-illustration-medical-260nw-2326819887.jpg');
+} */
+
+/* .navbar1 p{
+    padding: 10px 30px;
+} */
+
+nav .nav-box {
+    display: inline-block;
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    text-align: center;
+    padding-right: 50px;
+    padding-left: 500px;
+}
+
+
+
+.nav-box1 {
+    display: inline-block;
+    width: 350px;
+    height: 300px;
+    border: 2px solid rgb(134, 111, 111);
+    text-align: center;
+    padding: 45px;
+    /* Add padding, margins, background colors, etc. */
+}
+  
+.nav-box1 img {
+    max-width: 100%; /* Ensures the image doesn't exceed the container width */
+    max-height: 100%; /* Ensures the image doesn't exceed the container height */
+}
+  

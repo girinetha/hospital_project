@@ -1,0 +1,15 @@
+{% load static%}
+{% include 'header2.html '%}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <h2>Add patients</h2>
+    <div class="center">
+        <form method="POST">
+            {{ form.as_p }}
+            {% csrf_token %}
+            <input type="submit"  value="SUBMIT">
+        </form>
+    </div><br><br>
+{% include 'footer.html' %}

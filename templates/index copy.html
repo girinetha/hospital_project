@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/hospital.css' %}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightgrey">
+    <div class="center">
+        <h1>PRINCETON HOSPITAL</h1>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <a href="">Home</a>
+            <a class="nav-item" href="">Management</a>
+            <a href="{% url 'specialities' %}">Specialities</a>
+            <a href="{% url 'addpatient' %}" class="right">Book an appointment</a>
+            <a href="{% url 'myadmin' %}" class="right-side">mydmin</a>
+        </ul>
+    </nav>
+
+    <h2>Wellcome to the multi speciality hospital</h2>
+    <img height="400" width="1515" src="https://cdn.systematic.com/media/g0sj1tbg/hospital-building-001-global.jpg?mode=crop&width=1200&height=630&center=" alt="">
+    <!-- <form method="post">
+        {{myform.as_p}}
+        {% csrf_token %}
+        <input type="submit" value="submit">
+    </form> -->
+    <br><br>
+    <div class="box">
+        <a style="padding: 30px;" href="{% url 'donation' %}"><h1 style="color: black;">Blood compaign</h1></a>
+    </div>
+    <br>
+    <h2 style="display: ruby-text-container;">CENTER OF EXCELLENCE</h2>
+    <br><br>
+    <nav>
+        <div class="nav-box1">
+          <img src="https://kauveryhospital.com/blog/wp-content/uploads/2016/11/454970-donation1.jpg" alt="Image 1">
+          <a href="https://www.ncbi.nlm.nih.gov/books/NBK557571/"><h2>Heart Transplant</h2></a>
+        </div>
+        <div class="nav-box1">
+          <img src="https://cdn.getthegloss.com/convert/files/2023/01/bdd60560-9040-11ed-86c9-1fd6a2b9f5f6-Which%20laser%20treatment%20is%20best%20for%20your%20skin%20concern%3F.png/r%5Bwidth%5D=1920/bdd60560-9040-11ed-86c9-1fd6a2b9f5f6-Which%20laser%20treatment%20is%20best%20for%20your%20skin%20concern%3F.png" alt="Image 2">
+          <a href="https://www.healthline.com/health/laser-therapy"><h2>Laser Treatment</h2></a>
+        </div>
+        <div class="nav-box1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQkHoWcUZE-zrlSidXy4AikvX80UHMLqG9yw&usqp=CAU" alt="Image 2">
+            <a href="#"><h2>Liver Transplant</h2></a>
+        </div>
+        <br><br><br>
+        <div class="nav-box1">
+            <img src="https://iocoreprocedure.com/wp-content/uploads/2020/09/Website-5.jpg">
+            <a href="#"><h2>Bone Joints</h2></a>
+        </div>
+        <div class="nav-box1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTW6lQsAlqPaeoesSLmgSvWKC7MRTJwE9ning&usqp=CAU">
+            <a href="#"><h2>Mother & Child</h2></a>
+        </div>
+        <div class="nav-box1">
+            <img src="https://media.licdn.com/dms/image/D5612AQHfUlov0LSwXA/article-cover_image-shrink_720_1280/0/1700725243817?e=2147483647&v=beta&t=W-pZdhWm8Zi4SROzcyDZHX6umfxso17UaTogqxSxzNg" alt="Image 2">
+            <a href="#"><h2>Robotic Science</h2></a>
+        </div>
+    </nav>
+      
+      
+</body>
+</html>
+{% include footer.html %}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'css/hospital.css' %}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{% static 'favicon.ico' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body bgcolor="lightgrey">
+    <div class="center">
+        <h1>PRINCETON HOSPITAL</h1>
+    </div>
+    <nav class="navbar">
+        <ul>
+            <a href="{% url 'index' %}">Home</a>
+            <a class="nav-item" href="{% url 'management' %}">Management</a>
+            <a href="{% url 'specialities' %}">Specialities</a>
+            <a href="{% url 'addpatient' %}" class="right">Book an appointment</a>
+            <a href="{% url 'myadmin' %}" class="right-side">mydmin</a>
+        </ul>
+    </nav>
+    
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doners</title>
+</head>
+<body>
+    <h2>Blood doners</h2>
+    {% if doners %}
+    <table>
+        <thead>
+            <th>Donername</th>
+            <th>Age</th>
+            <th>Bloodgroup</th>
+        </thead>
+        {% for doner in doners %}
+        <tr>
+            <td>{{doner.donername}}</td>
+            <td>{{doner.age}}</td>
+            <td>{{doner.bloodgroup}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    {% else %}
+    <p>no records found</p>
+    {% endif %}
+</body>
+</html>
