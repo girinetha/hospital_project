@@ -79,10 +79,10 @@ WSGI_APPLICATION = 'hospital_management.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'akhil',
-        'HOST':'akhil.ca4v8tkgqbvq.ap-south-1.rds.amazonaws.com',
-        'PASSWORD':'akhil123',
-        'USER':'akhil',
+        'NAME': 'myhospital',
+        'HOST':'myhospital.cdso6g6owjtn.eu-north-1.rds.amazonaws.com',
+        'PASSWORD':'96969696',
+        'USER':'root',
         'PORT':'3306',
 
     }
